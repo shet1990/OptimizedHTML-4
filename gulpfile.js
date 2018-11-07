@@ -28,7 +28,6 @@ gulp.task('browser-sync', function() {
     })
 });
 
-
 gulp.task('styles', ['styles-libs'], function() {
     return gulp.src('app/sass/**/main.sass')
         .pipe(sass({ outputStyle: 'compact' }).on("error", notify.onError()))
