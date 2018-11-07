@@ -28,8 +28,19 @@ gulp.task('browser-sync', function() {
     })
 });
 
-gulp.task('styles', function() {
-    return gulp.src('app/sass/**/*.sass')
+
+gulp.task('styles', ['styles-libs'], function() {
+    return gulp.src('app/sass/**/main.sass')
+        .pipe(sass({ outputStyle: 'compact' }).on("error", notify.onError()))
+        .pipe(rename({ suffix: '.min', prefix: '' }))
+        .pipe(autoprefixer(['last 15 versions']))
+        //.pipe(cleancss({ level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
+        .pipe(gulp.dest('app/css'))
+        .pipe(browserSync.stream())
+});
+
+gulp.task('styles-libs', function() {
+    return gulp.src('app/sass/**/libs.sass')
         .pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
         .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(autoprefixer(['last 15 versions']))
