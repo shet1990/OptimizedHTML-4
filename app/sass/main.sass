@@ -104,21 +104,23 @@ header
 		align-item: center
 		img
 			margin-right: 7px
-	button
+	.button
 		display: flex
 		align-items: center
+		justify-content: center
 		width: 150px
 		height: 42px
 		background-color: #31B8DC
 		border-radius: 3px
 		margin-left: 30px
 		box-shadow: 0 3px 8px rgba(49,184,220,0.5)
-		a
-			text-transform: uppercase
-			color: #ffffff
-			text-decoration: none
-			span
-				font-size: 14px
+		text-transform: uppercase
+		color: #ffffff
+		text-decoration: none
+		span
+			font-size: 14px
+			margin-left: 7px
+		
 	a
 		color: #000000
 		font-size: 16px
@@ -150,8 +152,15 @@ header
 	.nav-item:hover
 		border-bottom: none
 
-#sub-menu:hover+.sub-menu,#sub-menu+.sub-menu:hover
+.link-sub-menu:hover+.sub-menu,.link-sub-menu+.sub-menu:hover
 	height: 44px
+
+//menu-mobile
+
+header
+	.mobile-menu
+		display: none
+
 
 //footer
 
@@ -162,14 +171,20 @@ footer.container
 	padding: 0
 	align-content: start
 	.col-12
-		padding: 0 6px 26px 6px
+		padding: 0 6px 0px 6px
 	.col-lg-4
-		padding: 0 6px
-		margin: 0 0 38px 0
+		padding: 30px 6px 0 6px
+		p
+			display: flex
+			justify-content: space-between
+			font-size: 14px
+			margin-bottom: 10px
+			img
+				display: none
+			img.minus
+				content: url('/img/SVG/Минус.svg')
 	ul
 		margin-right: 8px
-		p
-			font-size: 14px
 		li
 			margin-top: 8px
 			line-height: 20px
@@ -180,8 +195,11 @@ footer.container
 		li:last-child a
 			color: #666666
 			text-decoration: underline
+	ul.active
+		display: block!important
 	b
 		font-size: 14px
+
 
 .block-1
 	.footer-info-search
@@ -191,7 +209,7 @@ footer.container
 	.col-12
 		padding: 0 10px 0 10px
 	.col-12:first-child
-		padding-bottom: 26px
+		padding-bottom: 30px
 	.footer-contact
 		font-size: 9px
 		margin: 35px 0 28px 0
@@ -203,21 +221,23 @@ footer.container
 	.footer-logo
 		font-size: 12px
 		font-weight: 200
-		margin: 34px 0 18px 0
+		margin: 34px 0 38px 0
 		img
 			margin-right: 54px
 	.footer-mobile-button
-		button
-			width: 288px
-			height: 53px
+		width: 400px
+		height: 60px
+		a
+			padding: 16px 37px
 			background-color: #EEEEEE
 			border: 1px solid #E0E0E0
 			border-radius: 3px
-			a
+			text-decoration: none
+			span
 				font-size: 14px
 				font-weight: bold
 				color: #999999
-				text-decoration: none
+
 	b
 		font-size: 14px
 

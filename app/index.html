@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
 
-    <title>OptimizedHTML 4</title>
+    <title>ADREX</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
 <body>
 	<header class="container">
 		<nav class="navbar navbar-expand-lg menu-1">
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse">
 				<div class="navbar-nav align-items-center ">
 					<a class="nav-item nav-link" href="#">Журнал</a>
 					<a class="nav-item nav-link" href="#">Аналитика</a>
@@ -55,19 +55,19 @@
 						<img src="/img/SVG/Сообщения.svg" alt="Сообщения">
 					</a>
 					<a href="#" class="icon">
-						<img src="/img/SVG/Вход и Регистрация.svg" alt="Вход и Регистрация">
+						<img src="/img/SVG/Вход-и-Регистрация.svg" alt="Вход и Регистрация">
 					</a>
 				</div>
 				</div>
 			</div>
 		</nav>
 		<nav class="navbar navbar-expand-lg menu-2">
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="collapse navbar-collapse">
 				<div class="navbar-nav align-items-center">
 						<a class="logo" href="#">
 							<img src="/img/SVG/Логотип.svg" alt="Logo">
 						</a>
-						<a class="nav-item nav-link" id="sub-menu" href="#">Аренда</a>
+						<a class="nav-item nav-link link-sub-menu" href="#">Аренда</a>
 						<nav class="navbar navbar-expand-lg sub-menu">
 								<div class="collapse navbar-collapse">
 									<div class="navbar-nav align-items-center">
@@ -83,9 +83,9 @@
 									</div>
 								</div>
 						</nav>
-						<a class="nav-item nav-link" id="sub-menu" href="#">Продажа</a>
+						<a class="nav-item nav-link link-sub-menu" href="#">Продажа</a>
 						<nav class="navbar navbar-expand-lg sub-menu">
-								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="collapse navbar-collapse">
 									<div class="navbar-nav align-items-center ">
 											<a class="nav-item nav-link" href="#">Квартиры</a>
 											<a class="nav-item nav-link" href="#">Комнаты</a>
@@ -97,9 +97,9 @@
 									</div>
 								</div>
 							</nav>
-						<a class="nav-item nav-link" id="sub-menu" href="#">Новостройки</a>
+						<a class="nav-item nav-link link-sub-menu" href="#">Новостройки</a>
 						<nav class="navbar navbar-expand-lg sub-menu">
-								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="collapse navbar-collapse">
 									<div class="navbar-nav align-items-center ">
 											<a class="nav-item nav-link" href="#">Строительство квартир</a>
 											<a class="nav-item nav-link" href="#">Жилые комплексы</a>
@@ -109,9 +109,9 @@
 									</div>
 								</div>
 							</nav>
-						<a class="nav-item nav-link" id="sub-menu" href="#">Коммерческая</a>
+						<a class="nav-item nav-link link-sub-menu" href="#">Коммерческая</a>
 						<nav class="navbar navbar-expand-lg sub-menu">
-								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="collapse navbar-collapse">
 									<div class="navbar-nav align-items-center ">
 											<a class="nav-item nav-link" href="#">Офисы</a>
 											<a class="nav-item nav-link" href="#">Бизнес-центры</a>
@@ -125,30 +125,50 @@
 							</nav>
 						<a class="nav-item nav-link" href="#">Агентства недвижимости</a>
 						<a class="nav-item nav-link link-credit" href="#">
-							<img src="/img/SVG/Логотип банка.svg" alt="Логотип банка">
+							<img src="/img/SVG/Логотип-банка.svg" alt="Логотип банка">
 							<span>Кредиты на жильё</span>
 						</a>
-					<button type="button" class="btn">
-						<a href="#">
+						<a href="#" class="button">
 							<img src="/img/SVG/PRESSED.svg" alt="PRESSED">
 							<span>ОБЪЯВЛЕНИЕ</span>
 						</a>
-
-					</button>
 				</div>
 			</div>
 		</nav>
-		
 
-	
-		
+		<nav class="navbar navbar-light mobile-menu">
 			
-				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">Navbar</a>
+			
+				<div class="collapse navbar-collapse" id="navbarToggler">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+
+
+
 </header>
 
 <footer class="container">
 	<div class="row justify-content-start">
-		<div class="block-1 col-sm col-lg-3 offset-lg-1">
+		<div class="block-1 col-sm-12 col-lg-3 offset-lg-1">
 			<div class="col-12">
 				<b>ПОИСК НЕДВИЖИМОСТИ НА ADREX</b>
 			</div>
@@ -169,27 +189,26 @@
 			<div class="col-12 footer-bank-cards">
 				<img src="/img/SVG/Белкарт.svg" alt="Белкарт">
 				<img src="/img/SVG/Виза.svg" alt="Виза">
-				<img src="/img/SVG/Вирифид бай виза.svg" alt="Вирифид бай виза">
+				<img src="/img/SVG/Вирифид-бай-виза.svg" alt="Вирифид бай виза">
 				<img src="/img/SVG/Мастеркард.svg" alt="Мастеркард">
-				<img src="/img/SVG/Мастеркард секурекод.svg" alt="Мастеркард секурекод">
+				<img src="/img/SVG/Мастеркард-секурекод.svg" alt="Мастеркард секурекод">
 			</div>
 			<div class="col-12 footer-logo">
-				<img src="/img/SVG/Логотип - 2.svg" alt="Logo-footer">
+				<img src="/img/SVG/Логотип-2.svg" alt="Logo-footer">
 				<span>© Все права защищены</span>
 			</div>
 			<div class="col-12 footer-mobile-button">
-				<button>
-					<a href="">МОБИЛЬНАЯ ВЕРСИЯ САЙТА</a>
-				</button>
+					<a href="#"><span>МОБИЛЬНАЯ ВЕРСИЯ САЙТА</span></a>
 			</div>
 		</div>
-		<div class="block-2 col-sm-7 col-lg-6 offset-lg-1 row">
+		<div class="block-2 col-sm-12 col-lg-6 offset-lg-1 row">
 			<div class="col-12">
 				<b>ПОПУЛЯРНЫЕ ОТДЕЛЫ САЙТА</b>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-				<ul><p>Минск и область</p>
-					<li><a href="#">Купить  квартиру в Минске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></i></a></li>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Минск и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+				<ul>
+					<li><a href="#">Купить  квартиру в Минске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 					<li><a href="#">Купить однокомнатную квартиру в Минске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 					<li><a href="#">продажа комнат в Минске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 					<li><a href="#">Купить купить дом в Минском районе <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
@@ -197,8 +216,9 @@
 					<li><a href="#">Смотреть все</a></li>
 				</ul>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-					<ul><p>Брест и область</p>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Брест и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+					<ul>
 						<li><a href="#">Купить  квартиру в Бресте <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">Купить однокомнатную квартиру в Бресте <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">продажа комнат в Бресте <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
@@ -207,8 +227,9 @@
 						<li><a href="#">Смотреть все</a></li>
 					</ul>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-					<ul><p>Витебск и область</p>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Витебск и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+					<ul>
 						<li><a href="#">Купить  квартиру в Витебске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">Купить однокомнатную квартиру в Витебске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">продажа комнат в Витебске <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
@@ -217,8 +238,9 @@
 						<li><a href="#">Смотреть все</a></li>
 					</ul>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-					<ul><p>Гродно и область</p>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Гродно и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+					<ul>
 						<li><a href="#">Купить  квартиру в Гродно <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">Купить однокомнатную квартиру в Гродно <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">продажа комнат в Гродно <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
@@ -227,8 +249,9 @@
 						<li><a href="#">Смотреть все</a></li>
 					</ul>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-					<ul><p>Гомель и область</p>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Гомель и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+					<ul>
 						<li><a href="#">Купить  квартиру в Гомеле <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">Купить однокомнатную квартиру в Гомеле <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">продажа комнат в Гомеле <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
@@ -237,8 +260,9 @@
 						<li><a href="#">Смотреть все</a></li>
 					</ul>
 			</div>
-			<div class="col-lg-4 col-sm-6">
-					<ul><p>Могилёв и область</p>
+			<div class="col-lg-4 col-md-12">
+					<p><span>Могилёв и область</span><img src="/img/SVG/Плюс.svg" alt=""></p>
+					<ul>
 						<li><a href="#">Купить  квартиру в Могилёве <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">Купить однокомнатную квартиру в Могилёве <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
 						<li><a href="#">продажа комнат в Могилёве <img src="/img/SVG/Стрелка.svg" alt="стрелка"></a></li>
